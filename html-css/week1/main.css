@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+header{
+    width: 100%;
+    padding: 15px;
+    
+}
+header h1{
+    text-align: center;
+    display: table;
+    margin: 0 auto;
+    background-color:  #2360d399;
+    padding: 20px;
+    border-radius: 0 30% 0 30%;
+    -webkit-box-shadow: -8px 24px 106px -23px rgba(0,0,0,0.6);
+-moz-box-shadow: -8px 24px 106px -23px rgba(0,0,0,0.6);
+box-shadow: -8px 24px 106px -23px rgba(0,0,0,0.6);
+
+}
+header img{
+    display: block;
+    border-radius: 50%;
+    border: 2px solid #407ae499;
+   margin: 20px auto;
+}
+.container{
+    max-width: 100%;
+    margin: 0 50px;
+  
+    
+    
+}
+
+.left-div{
+    padding: 0 30px;
+   float: left;
+    width: 40%;
+    border: 2px solid rgba(0, 0, 0, 0.541);
+    -webkit-box-shadow: inset -5px -2px 24px 11px rgba(65,142,235,0.42);
+-moz-box-shadow: inset -5px -2px 24px 11px rgba(65,142,235,0.42);
+box-shadow: inset -5px -2px 24px 11px rgba(65,142,235,0.42);
+
+    
+}
+
+ h2{
+    text-align: center;
+    padding: 15px 0;
+    background-color: #2360d399;
+    margin: 50px;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+.about-me p{
+    font-size: 20px;
+    padding: 0 30px;
+    line-height: 2rem;
+}
+.contact ul{
+    padding-left: 30px;
+}
+.contact ul li {
+    list-style-type: none;
+    font-size: 20px;
+    padding-bottom:20px;
+}
+.skills-con{
+    width: 100%;
+    display: block;
+    position: relative;
+    margin: 20px 0;
+  
+}
+.skills-con p{
+   width: 30%;
+  float: left;
+  text-align: center;
+}
+.skills-con  .skills-bar{
+    display: block;
+float: left;
+    width: 70%;
+    height: 20px;
+    background-color: grey;
+    
+}
+.skills-con  .skills-bar div{
+
+    height:20px;
+    
+    background-color:#2360d399 ;
+    z-index: 1;
+}
+.html,.css{
+    width: 95%;
+}
+.pootstrap{
+    width: 70%;
+}
+.mvc{
+    width: 60%;
+}
+.javascript{
+    width: 50%;
+}
+
+.right-div{
+   float: right;
+    width:55%;
+    
+}
+.proffional-pro p{
+    font-size: 20px;
+    padding: 0 50px;
+    line-height: 2rem;
+}
+.right-div ul{
+    margin: 0 50px;
+    margin-left: 75px;
+}
+.right-div ul li{
+    font-size: 25px;
+    padding: 30px 0;
+}
+ h2{
+    text-align: center;
+    padding: 15px 0;
+    background-color: #2360d399;
+    margin: 50px;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+
+.skills-con,.clear{
+    clear: both;
+    display: table;
+    content: "";
+}
