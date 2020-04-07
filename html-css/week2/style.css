@@ -1,0 +1,193 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-y: none;
+}
+header{
+    width: 100%;
+}
+header> div{
+    padding: 30px;
+    background-color:#8080804d;
+}
+header div.title h1{
+    font-size: 50px;
+}
+header div.title p{
+    font-size: 18px;
+    padding-left: 20px;
+}
+nav{
+    width: 100%;
+    
+}
+nav ul{
+display: flex;
+list-style-type: none;
+flex-direction: row;
+}
+nav ul li{
+    margin-left: 50px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+nav ul li a:hover{
+    color:#00000099;
+}
+#wrapper{
+    overflow-y: hidden;
+}
+.banner{
+    width: 100%;
+}
+.banner img{
+    display: block;
+    width: 100%;
+}
+.container{
+    max-width: 70%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+}
+.topdiv{
+    display: flex;
+    flex-direction: row;
+   
+   
+}
+h2{
+    text-transform: uppercase;
+}
+.text p{
+    font-size: 16px;
+}
+.text1{
+    width: 40%;
+    margin-right: 11%;
+}
+.text1 h2{
+    font-size: 16px;
+    font-weight: bold;
+}
+.text2{
+    width: 60%;
+    
+   
+}
+.bottomdiv{
+    display: inline-flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+.text3{
+    width: 40%;
+    margin-right: 11%;
+}
+    
+
+.bottomdiv .logo{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    
+    
+    
+}
+
+
+.logowrap img{
+    width: 20%;
+   
+  
+}
+footer{
+    background-color: #6736cd;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding:50px 0;
+}
+.footercontainer{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+
+}
+.footercontainer div{
+    width: 25%;
+    color: #dcdcdc;
+    
+}
+.findos img{
+    display:inline-block;
+    width:80%;
+    
+
+}
+.navigation{
+    margin-left: 20px;
+}
+footer ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+footer ul li{
+    margin-bottom: 30px;
+    padding-bottom: 3px;
+    border-bottom: 2px solid #f3eaea63;
+    font-size: 20px;
+    font-weight: 900;
+}
+footer ul li a{
+    text-decoration: none;
+    color:#dcdcdc
+}
+
+/***********mobil design************/
+
+@media only screen and (max-width: 600px) {
+    h2{
+        font-size: 16px;
+    }
+    nav ul{
+        flex-direction: column;
+        
+    }
+    nav ul li{
+        padding: 10px 0 ;
+        text-align: center;
+    }
+    header div.title {
+        text-align: center;
+    }
+    header div.title h1{
+    font-size: 30px;
+    
+}
+.topdiv{
+    flex-direction: column;
+}
+.text1,.text2{
+    width: 100%;
+}
+.bottomdiv{
+    flex-direction: column;
+}
+.item{
+    width: 100%;
+}
+.footercontainer{
+    flex-direction: column;
+}
+.footercontainer div{
+    width:100%;
+    margin-bottom: 20px ;
+}
+.navigation{
+    margin-left: 0;
+}
+}
