@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms-week3</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+
+       
+            <div class="logo">   
+            <img src="Group 4.png" alt="logo" >
+        </div>
+           
+            <nav>
+                <ul class="menu">
+                    <li class="menu-item">Link1</li>
+                    <li class="menu-item">link2</li>
+                    <li class="menu-item">Link3</li>
+
+                </ul>
+            </nav>
+        
+
+    </header>
+    <div class="tabs">
+        <div class="tab">
+          <input type="radio" id="tab-1" name="tab-group-1" checked>
+          <label for="tab-1" class="tablable">step one</label>
+          <div class="content">
+            <div class="conatiner">
+                <h2> Sign up to yourcustomtailor.com</h2>  
+                <p>Lorem ipsum dolor sit amet consectetur
+                     adipisicing elit. Hic fugiat distinctio
+                      iste enim facere nemo asperiores id,
+                       atque itaque repellendus dolor unde dolorum
+                        quia repellat harum nobis eum! Explicabo, 
+                        sapiente?</p>
+                       
+            <h3>step 1/4 - tell us who you are?</h3>
+           <div class="w3-light-grey">
+               <div class="w3-green" style="height:24px;width:25%">
+
+               </div>
+           </div>
+            <form action="" method="post">
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col">
+                        <label for="firstName">First Name*</label>
+                    <input type="text" name="firstName" class="form-control" required min="2">
+                </div>
+                <div class="col">
+                    <label for="lastName">Last Name*</label>
+                    <input type="text" name="lastName" class="form-control" required min="2">
+                </div>
+                    </div>
+                    
+                </div>
+               
+                
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col">
+                <label for="country" >Country*</label>
+                <select id="country" required class="browser-default custom-select">
+                    <option value="">select your country</option>
+                    <option value="Danmark">Danmark</option>
+                    <option value="USA">USA</option>
+                    <option value="France">France</option>
+                    <option value="Germeny">Germeny</option>
+                </select>
+            </div>
+            </div>
+                </div>
+                <div class="form-group">
+                <div class="row">
+                    <div class="col">
+                    <label for="address">street address*</label>
+                    <input type="text" required min="2">
+                </div>
+                    <div class="col">
+                    <label for="zip-code">post code*</label>
+                    <input type="number" required min="0" name="zip-code"  maxlength="4" pattern="{4}">
+                </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-4">
+                    <label for="profile">Profile description</label>
+                    <p>please bla bla bla bla bla bla bla</p>
+                </div>
+                
+                <div class="col-8">
+                    <textarea name="profile" id="" cols="90" rows="10"max="500"></textarea>
+                </div>
+            </div>
+                </div>
+           
+                <div class="row">
+
+                    <p>Use the same address for billing and shipping? Uncheck below to fill out a sparate shipping address.</p>
+                </div>
+                <div class="row">
+                    <div class="form-check ml-5">
+                    <input type="checkbox" id="shipping" class="form-check-input"name="shipping" value="" checked>
+                    <label for="shipping" class="form-check-label">Shipping address</label>
+                </div>
+                    
+                   
+                   
+                
+                </div>
+                    
+                
+                <div class="row">
+                    <input type="submit" class="next"  value="next step">
+                </div>
+            
+
+            </form>
+        </div>
+    </div>
+</div>
+
+
+    <div class="tab">
+        <input type="radio" id="tab-2" name="tab-group-1">
+        <label for="tab-2" class="tablable">step two</label>
+        <div class="content">
+         <div class="container">
+             
+           <h2> Sign up to yourcustomtailor.com </h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus illo animi, beatae nobis voluptatum eveniet maxime corporis accusamus consequuntur rem earum, numquam ad modi corrupti dolore praesentium! Inventore, ad dignissimos?</p>
+           <h3>step 2/4 - tell us who you are?</h3>
+           <div class="w3-light-grey"style="width:100%;">
+               <div class="w3-green" style="height:24px;width:50%">
+
+               </div>
+           </div>
+                <form action="">
+                    <div class="form-group">
+                            <div class="row">
+                            
+                                <div class="col">
+                                    <label for="email">Email*</label>
+                                    <input type="text" class="form-control" name="email" required>
+                                </div>
+                                <div class="col">
+                                    <label for="phone">Phone</label>
+                                    <input type="number" class="form-control" name="phone">
+                                </div>
+                            </div>
+                </div>
+                <div class="row">
+                    <label for="password"> PassWord</label>
+                    <input type="password" class="form-control" name="password">
+                </div>
+                <div class="row">
+                    <label for="password">re-enter PassWord</label>
+                    <input type="password" class="form-control" name="password">
+                </div>
+                <div class="row">
+                    <p>I want to sign up for newsletter</p>
+                </div>
+                <div class="row">
+                    <div class="form-check ml-5">
+                    
+                   <input type="radio" name="news" class="news form-check-input">
+                   <label for="" class="form-check-label">weekly news</label>
+                </div>
+                <div class="form-check ml-5">
+                   <input type="radio" name="news" class="news form-check-input">
+                   <label for="" class="form-check-label">monthely news</label>
+                </div>
+                <div class="form-check ml-5">
+                   <input type="radio" name="news" class="news form-check-input">
+                   <label for="" class="form-check-label">Don't send me news</label>
+                </div>
+                    
+                    
+                </div>
+                <div class="row">
+                    <input type="button" class="next"  value="next step"/>
+                </div>
+                </form>
+         </div>
+          
+        </div>
+    </div>
+
+
+    <div class="tab">
+        <input type="radio" id="tab-3" name="tab-group-1">
+        <label for="tab-3" class="tablable">step three</label>
+        <div class="content">
+         <div class="container">
+            <h2> Sign up to yourcustomtailor.com </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus illo animi, beatae nobis voluptatum eveniet maxime corporis accusamus consequuntur rem earum, numquam ad modi corrupti dolore praesentium! Inventore, ad dignissimos?</p>
+               <h3>step 3/4 - tell us who you are?</h3>
+               <div class="w3-light-grey"style="width:100%;">
+                   <div class="w3-green" style="height:24px;width:75%">
+    
+                   </div>
+               </div>
+                    <form action="" id="check">
+                        <p>What kind of items are you interested in offers on?</p>
+                        <div class="row">
+                            <div class="form-check col">
+                                <label for="Apparal" class="form-check-label">Apparal</label>
+                                <input type="checkbox" name="Apparal" class="form-check-input ml-5" checked>
+                                
+                             </div>
+                             <div class="form-check col">
+                                <label for="Jewelry" class="form-check-label">Jewelry</label>
+                                <input type="checkbox" name="Jewelry" class="form-check-input ml-5"  checked>
+                                
+                             </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="form-check col">
+                                <label for="Accessorios" class="form-check-label">Accessorios</label>
+                                <input type="checkbox" name="Accessorios" class="form-check-input ml-5" checked>
+                                
+                             </div>
+                             <div class="form-check col">
+                                <label for="Shoes" class="form-check-label">Shoes</label>
+                                <input type="checkbox" name="Shoes" class="form-check-input ml-5" checked>
+                                
+                             </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="form-check col">
+                                <label for="Handbags" class="form-check-label">Handbags</label>
+                                <input type="checkbox" name="Handbags" class="form-check-input ml-5">
+                                
+                             </div>
+                            
+
+                        </div>
+
+                    </form>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="imgwrapp">
+                                <img src="https://via.placeholder.com/150" alt="">
+                                <input type="checkbox">
+                             </div>
+                        </div>
+                       
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                           
+                                <div class="imgwrapp"> 
+                                    <img src="https://via.placeholder.com/150" alt="">
+                                    <input type="checkbox">
+                                </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                                <div class="imgwrapp">
+                                    <img src="https://via.placeholder.com/150" alt="">
+                                    <input type="checkbox">
+                                </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                                <div class="imgwrapp">
+                                    <img src="https://via.placeholder.com/150" alt="">
+                                    <input type="checkbox">
+                                </div>
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="imgwrapp">
+                                <img src="https://via.placeholder.com/150" alt="">
+                                <input type="checkbox">
+                             </div>
+                        </div>
+                       
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                           
+                                <div class="imgwrapp"> 
+                                    <img src="https://via.placeholder.com/150" alt="">
+                                    <input type="checkbox">
+                                </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                                <div class="imgwrapp">
+                                    <img src="https://via.placeholder.com/150" alt="">
+                                    <input type="checkbox">
+                                </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                                <div class="imgwrapp">
+                                    <img src="https://via.placeholder.com/150" alt="">
+                                    <input type="checkbox">
+                                </div>
+                        </div>
+                        
+                        
+                    </div>
+
+                        <div class="row">
+                            <input type="button" class="next" form="" value="next step">
+                        </div>
+         </div>
+          
+        </div>
+    </div>
+
+    <div class="tab">
+        <input type="radio" id="tab-4" name="tab-group-1">
+        <label for="tab-4" class="tablable">step Four</label>
+        <div class="content">
+          <div class="container">
+              <h2>step4/4 - payment</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ad id beatae ratione a alias molestiae iste labore sit voluptatibus sint commodi, numquam odio tempora quam doloribus nihil aliquam earum.</p>
+              <div class="w3-light-grey"style="width:100%;">
+                <div class="w3-green" style="height:24px;width:100%">
+ 
+                </div>
+            </div>
+
+            <form action="">
+                <div class="form-group">
+                <div class="row">
+                  <div class="col-2"><label for="name">Name on Card</label></div>
+                  <div class="col-4"> <input type="text" name="name" class="form-control" min="2"></div>
+                    
+                </div>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-2">
+                            <label for="card">card type</label>
+                        </div>
+                        <div class="col-4">
+                            <select class="custom-select">
+                                <option value=""></option>
+                                <option value="">visa card</option>
+                                <option value="">mastercard</option>
+
+                            </select>  
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-2">
+                            <label for="cardnummber">credit card number </label>
+                        </div>
+                        <div class="col-4">
+                            <input type="number" name="cardnummber" class="form-control">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-2 text-right">
+                            <label for="cardnummber">Expiry month </label>
+                            
+                        </div>
+                        <div class="col-2">
+                            <input type="number" name="cardnummber" class="form-control" >
+                        </div>
+                        <div class="col-2 text-right">
+                            <label for="cardnummber">Expiry year </label>
+                        </div>
+                        <div class="col-2">
+                            <input type="number" name="cardnummber" class="form-control">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-2 text-right">
+                            <label for="ccv">ccv </label>
+                            
+                        </div>
+                        <div class="col-2">
+                            <input type="number" name="ccv" class="form-control" >
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            </form>
+            <div class="row">
+                <input type="button" class="next" form="" value="pay">
+            </div>
+          </div>
+          
+        </div>
+    </div>
+</div>
+    
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>    
+</body>
+</html>
+
