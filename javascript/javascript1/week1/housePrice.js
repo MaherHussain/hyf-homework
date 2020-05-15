@@ -12,7 +12,7 @@ const peterHousPrice = perterVolumeInMeters *2.5 * 1000 + gardinSize * 300 ;
 const peterPayment = 2500000;
 //console.log(peterPayment - peterHousPrice);
 if (peterHousPrice < peterPayment){
-    console.log("Peter paied too much " + peterPayment - peterHousPrice );
+    console.log("Peter paied too much "  );
     }
     else{
         console.log("Peter paied too little.");
