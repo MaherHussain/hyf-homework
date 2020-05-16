@@ -25,7 +25,7 @@ height = 8;
 gardinSize = 70;
 
 const juliaVolumeInMeters = wide * deep * height;
-const juliaHousPrice = perterVolumeInMeters * 2.5 * 1000 + gardinSize * 300;
+const juliaHousPrice = juliaVolumeInMeters * 2.5 * 1000 + gardinSize * 300;
 
 //console.log("julia " + juliaHousPrice);
 
