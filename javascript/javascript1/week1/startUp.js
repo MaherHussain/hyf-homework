@@ -1,4 +1,4 @@
-var firstWord = [
+const firstWord = [
   "Maher",
   "Ahmad",
   "jan",
@@ -10,7 +10,7 @@ var firstWord = [
   "javascript",
   "html",
 ];
-var secondWord = [
+const secondWord = [
   "Hussain",
   "css",
   "bootstrap",
@@ -24,7 +24,7 @@ var secondWord = [
 ];
 
 const randomNumber = Math.floor(Math.random() * 10) + 0;
-var startUpName = firstWord[randomNumber] + " " + secondWord[randomNumber];
+const startUpName = firstWord[randomNumber] + " " + secondWord[randomNumber];
 console.log(
   "the startup is " +
     startUpName +
