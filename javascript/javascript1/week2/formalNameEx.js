@@ -1,17 +1,5 @@
-/*var checkbox = document.get;
-
-function getFullName (firstName , sureName, formalName ){
-
-  
-console.log( firstName, sureName );
-
-return firstName + sureName;
-
-}
-
- 
-  const fullName1= getFullName("Maher", "Hussain" ,"lord");
-  const fullName2 =getFullName("Essam", "Ahmad","lord");*/
+//codepen link 
+//https://codepen.io/MaherHussain/pen/bGVQKqm
   
 // Copy your getFullname function here
 function getFullname (firstname, lastname, useFormalName ){
