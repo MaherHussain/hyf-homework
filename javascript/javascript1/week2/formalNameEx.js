@@ -8,7 +8,7 @@ function getFullname(firstname, lastname, useFormalName = false) {
 
     return "Lord " + firstname + " " + lastname;
   } else {
-    console.log(firstname, lastname);
+    // console.log(firstname, lastname);
 
     return firstname + " " + lastname;
   }
