@@ -10,17 +10,17 @@ let weekdays = [
 
 let today = new Date().getDay();
 let eventDay;
-console.log(today);
+console.log(weekdays[today]);
 
-function getEventWeekday(eventDayNum) {
-  eventDayNum = eventDayNum + today - 1;
-  console.log(eventDayNum);
+function getEventWeekday(day) {
+  day = today - 1 + day;
+  console.log(weekdays[day]);
 
-  if (eventDayNum < 7) {
-    return weekdays[eventDayNum];
+  if (day < 7) {
+    return weekdays[day];
   } else {
-    return weekdays[eventDayNum % 7];
+    return weekdays[day % 7];
   }
 }
-eventDay = getEventWeekday(7);
+eventDay = getEventWeekday(5);
 console.log(" event day will be " + eventDay);
