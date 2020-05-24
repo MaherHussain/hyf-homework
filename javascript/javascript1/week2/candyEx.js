@@ -12,12 +12,11 @@ function addCandy(candyType, weight) {
   } else if (candyType === "Chewing-gum") {
     boughtCandyPrices.push(weight * 0.03);
   } else {
-    let n = "candy type is not exsist";
-    return console.log(n);
+    return console.log("candy type is not exist");
   }
 }
-addCandy("Sweet", 20);
-addCandy("Chocolate", 10);
+addCandy("Sweet", 50);
+addCandy("Chocolate", 5);
 addCandy("Toffee", 5);
 addCandy("Chewing-gum", 5);
 
@@ -32,18 +31,14 @@ function canBuyMoreCandy() {
   while (count < boughtCandyPrices.length) {
     totalPrice += boughtCandyPrices[count];
     count++;
-    console.log("candy shopping done " + totalPrice);
+    console.log("total price " + totalPrice);
   }
 
-  if (totalPrice < amountToSpend) {
-    return false;
+  if (totalPrice > amountToSpend) {
+    console.log("Enough candy for you! -totalPrice >  amountToSpend");
   } else {
-    return true;
+    console.log("totalPrice <  amountToSpend You can buy more, so please do");
   }
 }
 
-if (canBuyMoreCandy()) {
-  console.log("You can buy more, so please do");
-} else {
-  console.log("Enough candy for you!");
-}
+canBuyMoreCandy();
