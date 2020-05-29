@@ -13,6 +13,8 @@ saveNote("Do laundry", 2);
 
 console.log(notes);
 
+// here go getNot function
+
 function getNote(id) {
   for (i = 0; i < notes.length; i++) {
     if (id === notes[i].id) {
@@ -30,3 +32,19 @@ function getNote(id) {
 
 const firstNote = getNote(3);
 console.log(firstNote);
+
+// here go all notes formatted function
+function logOutNotesFormatted() {
+  for (i = 0; i < notes.length; i++) {
+    console.log(
+      "The note with id: " +
+        notes[i]["id"] +
+        ", has the following note text: " +
+        '"' +
+        notes[i]["note"] +
+        '"'
+    );
+  }
+  // your code here
+}
+logOutNotesFormatted();
