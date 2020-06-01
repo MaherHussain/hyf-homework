@@ -12,7 +12,7 @@ console.log(activities);
 
 function showStatus(activities) {
   let usageAmount = 0;
-  for (i = 0; i < activities.length; i++) {
+  for (let i = 0; i < activities.length; i++) {
     if (activities.length === 0) {
       console.log("Add some activities before calling showStatus");
       return;
