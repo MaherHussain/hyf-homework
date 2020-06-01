@@ -4,16 +4,16 @@ const travelInformation = {
 };
 //console.log(travelInformation["speed"]);
 function travelInfo(travelInformation) {
-  speedMinutes = travelInformation["speed"] / 60;
-  destinationDistance = travelInformation["destinationDistance"];
+  speed = travelInformation.speed;
+  destinationDistance = travelInformation.destinationDistance;
 
-  let time = Math.floor(destinationDistance / speedMinutes);
-  minutes = time % 60;
-  hours = (time - minutes) / 60;
+  let Totaltime = destinationDistance / speed;
+  console.log();
 
-  console.log(time);
+  const hours = Math.floor(Totaltime);
+  const minutes = Math.round(Totaltime - hours) * 60;
 
-  return time;
+  return hours + " hours " + " and " + minutes + " minutes";
 }
 const travelTime = travelInfo(travelInformation);
-console.log(hours + " hours " + " and " + minutes + " minutes");
+console.log(travelTime);
