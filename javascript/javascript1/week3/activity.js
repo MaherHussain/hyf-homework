@@ -11,27 +11,22 @@ addActivity(formattedDate, "twetter", 10);
 console.log(activities);
 
 function showStatus(activities) {
-  let usageAmount = activities.reduce(function (r, a) {
-    return r + a["duration"];
-  }, 0);
+  let usageAmount = 0;
   for (i = 0; i < activities.length; i++) {
-    if (activities[i]["date"] == formattedDate) {
-      if (activities.length == 0) {
-        console.log("Add some activities before calling showStatus");
-        break;
-      } else {
-        console.log(
-          "You have added " +
-            activities.length +
-            " activities. They amount to " +
-            usageAmount +
-            " min. of usage"
-        );
-        break;
-      }
+    if (activities.length === 0) {
+      console.log("Add some activities before calling showStatus");
+      return;
+    } else {
+      usageAmount += activities[i].duration;
     }
   }
-
+  console.log(
+    "You have added " +
+      activities.length +
+      " activities. They amount to " +
+      usageAmount +
+      " min. of usage"
+  );
   //add time limit feature
   let timeLimit = 90;
   if (usageAmount >= timeLimit) {
@@ -46,8 +41,8 @@ function showStatus(activities) {
     );
   }
 }
-showStatus(activities);
 
+showStatus(activities);
 function spentMostTime() {
   let spentMost = 0;
   //here loop for chech  the high of duration
