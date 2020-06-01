@@ -20,33 +20,20 @@ const seriesDurations = [
 ];
 
 function logOutSeriesText() {
-  const ageInHours = 80 * 365 * 24;
-  for (i = 0; i < seriesDurations.length; i++) {
-    let title = seriesDurations[i]["title"];
-    //console.log(title);
-    let daysPropInHours = seriesDurations[i]["days"] * 24;
-    //console.log(daysPropInHours);
+  const lifeSpan = 80 * 365 * 24 * 60; // minutes
+  let total = 0;
+  for (let i = 0; i < seriesDurations.length; i++) {
+    const seriesDuration =
+      seriesDurations[i].days * 24 * 60 + seriesDurations[i].hours * 60;
 
-    let minutesInHour = seriesDurations[i]["minutes"] / 60;
-
-    let percentageOfAnAverageLifespan =
-      ((daysPropInHours + minutesInHour + seriesDurations[i]["hours"]) /
-        ageInHours) *
-      100;
+    const percent = (seriesDuration / lifeSpan) * 100;
+    total += percent;
 
     console.log(
-      title + " " + percentageOfAnAverageLifespan.toFixed(3) + "% of my life"
+      seriesDurations[i].title + " " + percent.toFixed(3) + "% of my life"
     );
-
-    seriesDurations[i].percentage = percentageOfAnAverageLifespan;
   }
+  console.log("In total that is " + total.toFixed(3) + " % of my life ");
 }
-function totalpre(seriesDurations, percentage) {
-  return seriesDurations.reduce(function (r, a) {
-    return r + a[percentage];
-  }, 0);
-}
-logOutSeriesText();
 
-let total = totalpre(seriesDurations, "percentage");
-console.log("In total that is " + total.toFixed(2) + "% of my life");
+logOutSeriesText();
