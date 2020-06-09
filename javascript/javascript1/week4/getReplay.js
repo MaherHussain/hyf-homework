@@ -1,74 +1,75 @@
 let toDo = [];
-const monthNames = [
-  "January",
-  "February",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December",
-];
+
 function getReply(command) {
-  switch (command) {
-    case "Hello my name is Maher":
-      return "Nice to meet you Maher";
-
-    case "What is my name?":
-      return "Your name is Maher";
-
-    case "Add fishing to my todo":
-      toDo.push("fishing");
-      return "fishing added to your todo";
-
-    case "Add singing in the shower to my todo":
-      toDo.push("singing in the shower");
-      return "singing added to your todo";
-
-    case "Remove fishing from my todo":
-      const index = toDo.indexOf("fishing");
-      if (index > -1) {
-        toDo.splice(index, 1);
-      }
-      return "Removed fishing from your todo";
-
-    case "What is on my todo?":
-      return "you have " + toDo.length + " todos " + '"' + toDo + '"';
-
-    case "What day is it today?":
-      return (
-        new Date().getDate() +
-        " of " +
-        monthNames[new Date().getMonth()] +
-        " " +
-        new Date().getFullYear()
-      );
-
-    case "what is 3 + 3":
-      return 3 + 3;
-
-    case "set a timer for 4 minutes":
-      let timer = setTimeout(function () {
-        console.log("timer is done");
-      }, 4000);
-      return "timer set for 4 min";
-
-    default:
-      return "this command is  undefined in voice assistant, please try again";
+    const commandWords = command.split(' ');
+  if (command.startsWith("hello my name ")) {
+    const name = commandWords[commandWords.length - 1];
+    return " Nice to meet you " + name;
+  } else if (command.startsWith("What is my name")) {
+    return " Your name is Maher";
+  } else if (command.startsWith("Add")) {
+    const activity = commandWords[1];
+    
+    if(toDo.includes(activity))
+    {
+      return activity  + " allready exist"
+    }
+    else{
+        toDo.push(activity);
+        return activity + " added to your todo";
+    }
+    
   }
+   else if (command.startsWith("Remove")) {
+    const activity = commandWords[1];
+    const remo = toDo.indexOf(activity);
+    if(remo > -1 ){
+      toDo.splice(remo,1);
+    }
+    return activity + " removed from your todo";
+  }
+  else if(command.startsWith("What is on my todo?"))
+  {
+      if (toDo.length == 0) {
+        return "there is no thing to do ";
+      } else {
+        return "you have " + toDo.length + " todos " + '"' + toDo + '"';
+      }
+  }
+  else if(command === 'what day is it today?')
+  {
+     return new Date().toLocaleDateString("en-US", {
+       day: "numeric",
+       year: "numeric",
+       month: "long",
+     });
+  }
+
+  else if (command.startsWith ("what is")) {
+    const commandWords = command.split(' ');
+    console.log(commandWords);
+    let num1 = commandWords[commandWords.length - 3] ;
+    let num2 = commandWords[commandWords.length - 1];
+         return parseInt(num1) + parseInt(num2);
+       }
+      
+       else if( command.startsWith('set a timer for ')){
+          const commandWords = command.split(" ");
+          let time = parseInt(commandWords[commandWords.length - 2]);
+          setTimeout(function () {
+            console.log("timer is done");
+          }, time);
+          return "timer set for " + time  +" min";
+          
+       }
+       else {
+         return "the command is not found"
+       }
+ 
 }
-/* console.log(getReply("Hello my name is Benjamin"));
-console.log(getReply("What is my name?"));
-console.log(getReply("Add fishing to my todo"));
-console.log(getReply("Add singing in the shower to my todo"));
 
-console.log(getReply("What is on my todo?"));
-console.log(getReply("What day is it today?"));
-console.log(getReply("what is 3 + 3"));
 
-console.log(getReply("set a timer for 4 minute ")); */
-console.log(getReply("hello  "));
+console.log(getReply("set a timer for 5 min"));
+
+
+ 
