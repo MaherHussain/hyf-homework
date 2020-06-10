@@ -21,6 +21,7 @@ function danishLetters(str) {
   ) {
     return "there is no any danish letters in your sentenece" ;
   }
+  
   else{ 
       
          
