@@ -1,16 +1,12 @@
-const danishWords = ["bil", "plante", "kaffe", "bog", "ø", "planetarium"];
+const danishWords = ["plante" ,"bil" , "kaffe", "bog", "øl", "planetarium","p"];
 function shortestWord(){
-   
-    let shortestword = danishWords[0];
-    for(let word in danishWords){
-        
-             if (word.length < shortestword.length) {
-               shortestword = word;
-             }
+   console.log(
+  danishWords.reduce((a,b) => a.length <= b.length? a:b));
+    
+    
+     
 
-        return shortestword
-
-
-    }
+    
 }
-console.log(shortestWord());
+
+shortestWord();
