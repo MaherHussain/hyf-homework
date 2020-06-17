@@ -24,7 +24,7 @@ function getNote(id) {
   }
 
   throw new Error("note not found!");
-  //console.error(" note not found !");
+  //console.error(" note not found !"); this is just to know i can use console.error
 }
 
 const firstNote = getNote(3);
