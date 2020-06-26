@@ -32,8 +32,7 @@ function gameStart() {
   document.addEventListener("keypress", countKeyPress);
 
   setTimeout(() => {
-    if (totlaNumberOfSeconds > 0) {
-      if (player1PressCount > player2PressCount) {
+     if (player1PressCount > player2PressCount) {
         player1.innerHTML += "<br> winner";
         player2.innerHTML += "";
         document.removeEventListener("keypress", countKeyPress);
@@ -51,6 +50,7 @@ function gameStart() {
       player1PressCount = 0;
       player2PressCount = 0;
       document.removeEventListener("keypress", countKeyPress);
-    }
+    
+     
   }, totlaNumberOfSeconds * 1000);
 }
