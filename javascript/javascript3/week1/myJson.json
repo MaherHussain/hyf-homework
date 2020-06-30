@@ -1,0 +1,16 @@
+ {"firstName": "Maher",
+    "surName" : "Hussain",
+    "age": 32, 
+    "Email": "maherhussain6@gmail.com",
+    "location": "Denmark",
+    "skills" : ["Html", "Css", "Javascript", "Bootstrab", "React","vue", "node", "Asp.net"],
+    "address":{
+        "Denmark":"solgårdsvej 3c,st",
+        "Syria": "citycenter 45 , Damascuse"
+    },
+    "work": false
+
+}
+     
+
+
