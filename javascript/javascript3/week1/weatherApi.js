@@ -5,7 +5,7 @@ const result = document.getElementById("weatherstatus");
 const empty = document.getElementById("empty");
 btn.addEventListener ('click',() => {
      
-     if (cityName.value == "" || cityName.value == null) {
+     if (cityName.value === "" || cityName.value == null) {
        const empty = document.getElementById("empty");
        empty.innerHTML = " you have to input city name ";
        
