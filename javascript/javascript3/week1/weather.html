@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #weatherstatus{
+            margin-top: 30px;
+            padding: 50px;
+            background: url(/images/23284.jpg) no-repeat center center;
+            height: 500px;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <input type="text"  value="" placeholder="enter your city name ">
+    <button id="btn">get weather</button>
+
+    <div id="weatherstatus" st>
+        <p id="empty"></p>
+        <h3 id="name"></h3>
+        <p id="temp"></p>
+        <p id="wind"></p>
+        <p id="description"></p>
+        <img  id="icon" alt="">
+        
+    </div>
+
+
+    <script src="weatherApi.js"></script>
+</body>
+</html>

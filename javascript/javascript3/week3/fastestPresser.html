@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 30px auto;
+      }
+      .container {
+        width: 75%;
+        margin: 0 auto;
+      }
+      .time-cont{
+          text-align: center;
+          margin: 0 auto;
+          width: 100%;
+      }
+      #playerCont {
+        width: 75%;
+        padding: 50px;
+        margin: 0 auto;
+        text-align:center;
+
+      }
+      .player{
+          padding-top: 20px;
+        float: left;
+        width: 49%;
+        height: 200px;
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="time-cont">
+        <input type="number" min="1" id="startInput" value="" />
+        <button id="start">start</button>
+      </div>
+
+      <div id="playerCont">
+        <div class="player " id="player1">press s
+          
+        </div>
+        <div class="player " id="player2">presss p
+           
+        </div>
+      </div>
+    </div>
+
+    <script src="fastestPresser.js"></script>
+  </body>
+</html>
