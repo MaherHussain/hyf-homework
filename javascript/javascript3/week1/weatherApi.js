@@ -11,6 +11,7 @@ btn.addEventListener ('click',() => {
        
       
      } else {
+       empty.innerHTML = " ";
        let ApiUrl =
          "http://api.openweathermap.org/data/2.5/weather?q=" +
          cityName.value +
@@ -39,8 +40,11 @@ btn.addEventListener ('click',() => {
              "@2x.png";
            icon.setAttribute("src", iconUrl);
 
-           //    result.innerHTML = weather.weather[0].icon;
+           
          });
      }
 
 })
+
+
+
