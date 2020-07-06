@@ -25,7 +25,7 @@ const url =
   .then((movie) => {
     for(let item of movie ){
       if (item.rating < 5 && item.year > 2000) {
-        console.log(item);
+        //console.log(item);
       } 
     }
     
