@@ -13,8 +13,11 @@ let totlaNumberOfSeconds;
 let player1PressCount = 0;
 let player2PressCount = 0;
 
-timeinput.addEventListener("input", () => {
+timeinput.addEventListener("input", (event) => {
+  
+  // @ts-ignore
   totlaNumberOfSeconds = timeinput.value;
+  console.log(totlaNumberOfSeconds);
 });
 startBtn.addEventListener("click", gameStart);
 

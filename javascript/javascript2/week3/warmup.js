@@ -42,9 +42,7 @@ locationBtn.addEventListener("click", ()=>{
    demo.innerHTML = "Geolocation is not supported by this browser.";
  }
 })
-/* locationBtn.onclick = function getLoction() {
- 
-}; */
+
 
 const showPostion = (position) => {
   demo.innerHTML =
