@@ -39,14 +39,15 @@ where title like '%database%' or description like '%database%';
 -- Get the title and status (as text) of all tasks
 
 select title , name 
-from task, status;
+from task
+join status;
 
 -- Get the name of each status, along with a count of how many tasks have that status
 
 select  status.name,
 count(task.status_id) as total_Tasks
 from status 
-left join task on  status.id  = task.status_id
+join task on  status.id  = task.status_id
 GROUP BY  status.name;
 
  -- Get the names of all statuses, sorted by the status with most tasks first
@@ -54,7 +55,7 @@ GROUP BY  status.name;
  select  status.name,
 count(task.status_id) as total_Tasks
 from status 
-left join task on  status.id  = task.status_id
+join task on  status.id  = task.status_id
 GROUP BY  status.name
  order by total_Tasks desc;
 
