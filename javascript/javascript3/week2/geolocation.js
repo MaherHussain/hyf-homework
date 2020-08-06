@@ -15,17 +15,19 @@ const setTimeoutPromise = (timeout) =>{
 
 
 
-  async function getCurrentLocation(postion) {
-    // const latitude = postion.coords.latitude;
-    // const longitude = postion.coords.longitude;
+  async function getCurrentLocation(position) {
+     if (!navigator.geolocation) {
+        const latitude = position.coords.latitude;
+        const longitude = position.coords.longitude;
+        let url = `https://www.openstreetmap.org/#map=18/${latitude}/${longitude}`;
     try {
-      fetch(
-        `https://www.openstreetmap.org/#map=18/${latitude}/${longitude}`
-      ).then((postion) => {
-        console.log(postion);
-      });
+      await fetch(url);
+      console.log(`Latitude: ${latitude} °, Longitude: ${longitude} °`);
     } catch (error) {
       console.log("error");
     }
+        
+    }
+     
   };
   getCurrentLocation();
