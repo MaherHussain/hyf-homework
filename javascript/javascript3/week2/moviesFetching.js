@@ -7,14 +7,9 @@ const url =
   .then((movie) => {
     for(let item of movie ){
       if (item.rating < 5 ){
-        //console.log(item);
-
-      } 
-      
-    }
-    
-
-  } )
+       } 
+     }
+   })
   .catch((error) => {
     console.error("there is some thing wrong")
   })
@@ -25,12 +20,10 @@ const url =
   .then((movie) => {
     for(let item of movie ){
       if (item.rating < 5 && item.year > 2000) {
-        //console.log(item);
+        
       } 
     }
-    
-
-  } )
+  })
   .catch((error) => {
     console.error("there is some thing wrong")
   })
