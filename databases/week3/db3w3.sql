@@ -22,6 +22,7 @@ create Table Reservation(
  on delete cascade on update cascade
 );
 
+
 create Table Review(
  `id` int not null unique primary key auto_increment,
  `title` varchar(255) not null ,
