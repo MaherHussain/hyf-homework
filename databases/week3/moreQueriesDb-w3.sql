@@ -3,7 +3,10 @@ use  mealsharing;
 select * from meals
 where price  < 50;
 -- Get meals that still has available reservations
-
+select meals.* from meals
+join reservations
+on meals.id = reservations.meal_id
+group by `when` ;
 -- Get meals that partially match a title. Rød grød med will match the meal with the title Rød grød med fløde
 
 select * from meals 
@@ -18,15 +21,16 @@ select * from meals
 limit 3;
 
 -- Get the meals that have good reviews
-select meals.* from meals
+select meals.*,round(avg(reviews.stars),0) from meals
 join reviews 
-where meals.id = reviews.meal_id
-and reviews.stars > 4;
+where 
+reviews.stars > 5;	
 
 -- Get reservations for a specific meal sorted by created_date
-select reservations.* from reservations
+select reservations.* , sum(reservations.number_of_guests)from reservations
 join meals 
 where reservations.meal_id = meals.id 
+group by reservations.meal_id
 order by reservations.created_date desc;
 
 
