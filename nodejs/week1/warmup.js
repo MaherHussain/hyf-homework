@@ -19,3 +19,4 @@ class Circule {
 
 const c1 = new Circule(10);
 console.log(c1.getDiameter());
+console.log(c1.getArea());
