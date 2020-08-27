@@ -1,0 +1,22 @@
+{
+  "name": "mealsharing",
+  "version": "1.0.0",
+  "description": "meal sharing webapplication",
+  "main": "./src/backend/server.js",
+  "scripts": {
+    "start" : "node ./src/backend/server.js",
+     "dev": "npm run server ",
+     "server": "nodemon ./src/backend/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+   
+    
+  },
+  "author": "Maher Hussain",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
