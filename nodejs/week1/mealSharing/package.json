@@ -4,12 +4,10 @@
   "description": "meal sharing webapplication",
   "main": "./src/backend/server.js",
   "scripts": {
-    "start" : "node ./src/backend/server.js",
-     "dev": "npm run server ",
-     "server": "nodemon ./src/backend/server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-   
-    
+    "start": "node ./src/backend/server.js",
+    "dev": "npm run server ",
+    "server": "nodemon ./src/backend/server.js",
+    "test": "jest --runInBand"
   },
   "author": "Maher Hussain",
   "license": "ISC",
@@ -17,6 +15,9 @@
     "express": "^4.17.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.4"
+    "jest": "^26.4.2",
+    "nodemon": "^2.0.4",
+    "superagent": "^6.0.0",
+    "supertest": "^4.0.2"
   }
 }
