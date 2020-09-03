@@ -25,10 +25,6 @@ if (title) {
         res.status(400).send(`no meal founded with title ${title}`)
     }
 
-
-    
-   
- 
 }
 
 // filter by created date
