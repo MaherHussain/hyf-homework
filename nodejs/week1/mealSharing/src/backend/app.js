@@ -35,7 +35,7 @@ app.get("/reservations", (request, response) => {
   response.send(reservations);
 });
 
-app.get("/randomreservation", (request, response) => {
+app.get("/reservation", (request, response) => {
   response.send(randomreservations);
 });
 module.exports = app;

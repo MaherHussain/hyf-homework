@@ -10,7 +10,7 @@ describe("GET /", () => {
     test("responds with corrected response", async () => {
         const response = await request(app).get("/");
         expect(response.statusCode).toBe(200);
-        expect(response.text).toBe("Meal Sharing Web App");
+        expect(response.text).toBe("Meal Sharing");
     });
 });
 
