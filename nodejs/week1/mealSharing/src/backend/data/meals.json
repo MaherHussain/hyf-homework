@@ -1,0 +1,72 @@
+[
+  {
+    "id": 10,
+    "title": "CHICKEN RICE BOWL",
+    "description": "Rice, the chicken tacos meat, veggies, cheese, avocado, lettuce",
+    "location": "Copenhagen",
+    "when": "2020-09-02 00:00:00",
+    "max_reservations": 50,
+    "price": 45,
+    "created_date": "2020-08-16"
+  },
+  {
+    "id": 11,
+    "title": "Pesto Pasta",
+    "description": "with chicken ",
+    "location": "Roskilde",
+    "when": "2020-08-20 00:00:00",
+    "max_reservations": 60,
+    "price": 46,
+    "created_date": "2020-08-17"
+  },
+  {
+    "id": 12,
+    "title": "Pad Thai",
+    "description": "Thai food ",
+    "location": "klampenborg",
+    "when": "2020-08-30 00:00:00",
+    "max_reservations": 30,
+    "price": 35,
+    "created_date": "2020-08-14"
+  },
+  {
+    "id": 8,
+    "title": "SOUTHWEST CHICKEN SALAD",
+    "description": " you can add the chicken taco meat, tomatoes, cilantro, avocado, cheese",
+    "location": "Copenhagen",
+    "when": "2020-08-12 00:00:00",
+    "max_reservations": 50,
+    "price": 80,
+    "created_date": "2020-07-16"
+  },
+  {
+    "id": 6,
+    "title": "Sea Food",
+    "description": " you will have option choose 4 types of sea food",
+    "location": "Copenhagen",
+    "when": "2020-08-12 00:00:00",
+    "max_reservations": 180,
+    "price": 100,
+    "created_date": "2020-07-16"
+  },
+  {
+    "id": 9,
+    "title": "CHICKEN NACHOS",
+    "description": "Chips, chicken taco meat, beans, veggies, cheese,",
+    "location": "Copenhagen",
+    "when": "2020-08-12 00:00:00",
+    "max_reservations": 90,
+    "price": 50,
+    "created_date": "2020-07-16"
+  },
+  {
+    "id": 7,
+    "title": "Cheeseburger",
+    "description": "A cheeseburger is a hamburger topped with cheese",
+    "location": "Copenhagen",
+    "when": "2020-08-20 00:00:00",
+    "max_reservations": 160,
+    "price": 50,
+    "created_date": "2020-07-16"
+  }
+]
