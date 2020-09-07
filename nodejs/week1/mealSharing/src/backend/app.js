@@ -22,10 +22,10 @@ app.get("/meals", (request, response) => {
   response.send(meals);
 });
 
-app.get("/cheapMeals", (request, response) => {
+app.get("/cheap-meals", (request, response) => {
   response.send(cheapmeal);
 });
-app.get("/largeMeals", (request, response) => {
+app.get("/large-meals", (request, response) => {
   response.send(largemeals);
 });
 app.get("/meal", (request, response) => {
