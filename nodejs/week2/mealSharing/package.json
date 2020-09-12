@@ -1,4 +1,26 @@
 {
+ nodejs/week2
+  "name": "http-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/backend/server.js",
+  "scripts": {
+    "test": "jest --runInBand",
+    "start": "node ./src/backend/server.js",
+    "dev": "npm run server ",
+    "server": "nodemon ./src/backend/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^26.2.2",
+    "nodemon": "^1.19.4",
+    "superagent": "^5.3.1",
+    "supertest": "^4.0.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+
   "name": "mealsharing",
   "version": "1.0.0",
   "description": "meal sharing webapplication",
@@ -19,5 +41,6 @@
     "nodemon": "^2.0.4",
     "superagent": "^6.0.0",
     "supertest": "^4.0.2"
+ master
   }
 }
