@@ -1,3 +1,4 @@
+ nodejs/week2
 # Logs
 *.log
 npm-debug.log*
@@ -44,3 +45,7 @@ dist/
 .DS_Store
 
 package-lock.json
+
+.DS_Store
+/node_modules
+ master

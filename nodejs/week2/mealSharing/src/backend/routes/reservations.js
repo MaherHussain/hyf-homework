@@ -1,3 +1,4 @@
+ nodejs/week2
 const express = require("express");
 const router = express.Router();
 const reservations = require("../data/resrvations.json");
@@ -24,3 +25,9 @@ router.get("/:id", async (req, res, next) => {
 });
 
 module.exports = router;
+
+const reservations = require("../data/reservations.json");
+
+
+module.exports = reservations;
+ master
