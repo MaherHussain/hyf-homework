@@ -4,7 +4,7 @@ const router = express.Router();
 const meals = require("../data/meals.json");
 
 // filter efter maxprice 
-router.get("/",async( req, res)=> {
+router.get("/",( req, res)=> {
 let maxPrice = req.query.maxPrice;
 if (maxPrice){
     res.send(meals.filter(meal => meal.price <= Number(maxPrice))) 
@@ -54,16 +54,17 @@ if(limit){
 });
 
 // search meal by id 
-router.get("/:id", async (request, response,next) => {
+router.get("/:id",  (request, response) => {
   let mealId = request.params.id;
-  meals.forEach(meal => {
-      if(meal.id === parseInt(mealId)){
- return response.json(meal);
-       
-      }
-  })
+ const meal=  meals.find(meal => 
+     meal.id === Number(mealId)
+       )
+      
+     response.json(meal);
+
+  
 response.status(400).send("not founded");
- next();
+
 });
 
 
