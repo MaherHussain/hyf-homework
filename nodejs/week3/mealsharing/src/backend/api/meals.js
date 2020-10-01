@@ -39,7 +39,44 @@ router.get("/", async (request, response) => {
           .limit(parseInt(request.query.limit))
           .then((data) => response.json(data))
           .catch((err) => response.status(400).send("Bad request").end());
+      } else if (request.query.availableReservations) {
+
+       
+         
+            return await knex("meals")
+              .select("meals.*")
+              .count("reservations.id as max")
+              .leftJoin("reservations", "meals.id", "=", "reservations.meal_id")
+              .groupBy("meals.id")
+              .having(
+                knex.raw("meals.max_reservations > count(reservations.meal_id)")
+              )
+              .then((data) => response.json(data))
+              .catch((err) => response.status(400).send("Bad request").end());
+              
+         
+       
       }
+      const creatNewMeal = async ({ body }) => {
+        const {
+          title,
+          description,
+          location,
+          when,
+          max_reservations,
+          price,
+          created_date,
+        } = body;
+        return await knex("meals").insert({
+          title,
+          description,
+          location,
+          when,
+          max_reservations,
+          price,
+          created_date,
+        });
+      };
   
     } catch (error) {
       throw error;
@@ -61,6 +98,24 @@ router.post("/", async (request, response) => {
 })
 });
 
+/* const getAvailableReservations = async (availableReservations,res) => {
+  if (availableReservations === "true") {
+    try {
+      return await knex("meals")
+        .select("meals.*")
+        .count("reservations.id as count")
+        .leftJoin("reservations", "meals.id", "=", "reservations.mealId")
+        .groupBy("meals.id")
+        .having(
+          knex.raw("meals.maxNumberOfGuests > count(reservations.mealId)")
+        );
+    } catch (error) {
+      console.log(error);
+    }
+  } else {
+   res.status(400).send("Bad request").end();
+  }
+}; */
 const creatNewMeal = async({body})=>{
   const { title, description, location, when, max_reservations, price, created_date} = body;
 return await knex("meals").insert({
