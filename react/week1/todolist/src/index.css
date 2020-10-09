@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+table.redTable {
+  border: 1px solid #0D0BA4;
+  background-color: #EEE7DB;
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+table.redTable td, table.redTable th {
+  border: 1px solid #AAAAAA;
+  padding: 3px 2px;
+}
+table.redTable tbody td {
+  font-size: 13px;
+  color: #000000;
+}
+table.redTable thead {
+  background: #1DCBFB;
+  border-bottom: 1px solid #3C441E;
+}
+table.redTable thead th {
+  font-size: 19px;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+}
+table.redTable tfoot td {
+  font-size: 13px;
+}
+table.redTable tfoot .links {
+  text-align: right;
+}
+table.redTable tfoot .links a{
+  display: inline-block;
+  background: #FFFFFF;
+  color: #A40808;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
