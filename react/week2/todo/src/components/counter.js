@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 const Counter = () => {
      const [count, setCount] = useState(0);
-     let t;
+     
   useEffect(() => {
+    let t;
     t = setInterval(() => {
       setCount(count + 1);
     }, 1000);
